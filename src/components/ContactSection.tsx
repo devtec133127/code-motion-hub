@@ -7,7 +7,7 @@ interface ContactSectionProps {
 
 export const ContactSection = ({ id = "contact" }: ContactSectionProps) => {
   const handleContact = () => {
-    window.location.href = "mailto:kontakt@example.com?subject=Projektanfrage";
+    window.location.href = "mailto:kontakt@prozess-integration.de?subject=Projektanfrage";
   };
 
   return (
