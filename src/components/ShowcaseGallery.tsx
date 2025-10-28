@@ -17,9 +17,9 @@ interface ShowcaseItem {
 const showcaseItems: ShowcaseItem[] = [
   {
     id: "hero-reveal",
-    title: "Hero Reveal Animation",
-    description: "GSAP-basierte Scroll-gesteuerte Animation mit ScrollTrigger für beeindruckende Hero-Sektionen.",
-    demoUrl: "https://codepen.io/GreenSock/embed/preview/xxpBoME?default-tab=result",
+    title: "Automatisierte Produktkataloge",
+    description: "Neue Produkte werden automatisch auf Ihrer Website angezeigt. Kein manuelles Einpflegen, sofortige Aktualisierung",
+    demoUrl: "",
     codeSnippet: `gsap.from(".hero-element", {
   scrollTrigger: {
     trigger: ".hero-section",
@@ -35,9 +35,9 @@ const showcaseItems: ShowcaseItem[] = [
   },
   {
     id: "interactive-hover",
-    title: "Interactive Hover Boxes",
-    description: "Smooth 3D-Transformationen und Parallax-Effekte für interaktive Karten und Grid-Layouts.",
-    demoUrl: "https://codepen.io/GreenSock/embed/preview/vYdKOLZ?default-tab=result",
+    title: "Interaktive Filter & Live-Daten",
+    description: "Besucher können Produkte nach Kategorie, Preis oder Verfügbarkeit filtern. Live-Counter zeigt aktuelle Lagerbestände.",
+    demoUrl: "",
     codeSnippet: `const cards = gsap.utils.toArray('.card');
 cards.forEach(card => {
   gsap.to(card, {
@@ -52,9 +52,45 @@ cards.forEach(card => {
   },
   {
     id: "scroll-story",
-    title: "Scroll-Triggered Story",
-    description: "Narrative Scroll-Erlebnisse mit koordinierten Animationen und Webflow CMS-Integration.",
-    demoUrl: "https://codepen.io/GreenSock/embed/preview/NWGjJMP?default-tab=result",
+    title: "Smarte Lead-Formulare",
+    description: "Kontakt- oder Buchungsformulare leiten Leads automatisch in CRM oder Tabellen weiter.",
+    demoUrl: "",
+    codeSnippet: `gsap.timeline({
+  scrollTrigger: {
+    trigger: ".story-section",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 1,
+    pin: true
+  }
+})
+.from(".story-text", { opacity: 0, x: -100 })
+.from(".story-image", { opacity: 0, scale: 0.8 });`,
+    imageSrc: "/placeholder.svg"
+  },
+  {
+    id: "automation",
+    title: "Kleine Prozessautomatisierungen",
+    description: "Routine-Aufgaben wie Newsletter-Abonnenten, Event-Registrierungen oder Content-Publishing werden automatisiert.",
+    demoUrl: "",
+    codeSnippet: `gsap.timeline({
+  scrollTrigger: {
+    trigger: ".story-section",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 1,
+    pin: true
+  }
+})
+.from(".story-text", { opacity: 0, x: -100 })
+.from(".story-image", { opacity: 0, scale: 0.8 });`,
+    imageSrc: "/placeholder.svg"
+  },
+  {
+    id: "personalizing",
+    title: "Dynamische Inhalte & Personalisierung",
+    description: "Inhalte auf Ihrer Website passen sich automatisch an Besuchergruppen, tandort oder Verhalten an.",
+    demoUrl: "",
     codeSnippet: `gsap.timeline({
   scrollTrigger: {
     trigger: ".story-section",
@@ -91,10 +127,10 @@ export const ShowcaseGallery = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Showcase: Technische Möglichkeiten
+              Use-Cases: Wo meine Unterstützung Mehrwert schafft
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Beispiele für Motion Design, Interactive Experiences und Webflow-Integrationen
+              Praxisnahe Anwendungsfälle rund um Automatisierung, Webflow-Integrationen und datengetriebene Features
             </p>
           </div>
 
@@ -115,29 +151,20 @@ export const ShowcaseGallery = () => {
                   <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                     {item.description}
                   </p>
-                  <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="btn-demo flex-1"
-                      onClick={() => handleDemoClick(item)}
-                    >
-                      <Eye className="mr-2 h-4 w-4" />
-                      Demo ansehen
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="btn-code flex-1"
-                      onClick={() => handleCodeClick(item)}
-                    >
-                      <Code className="mr-2 h-4 w-4" />
-                      View Code
-                    </Button>
-                  </div>
                 </div>
               </Card>
             ))}
+          </div>
+          <div className="flex gap-3">
+            <Button
+              variant="outline"
+              size="sm"
+              className="btn-demo flex-1"
+              //onClick={() => handleDemoClick(item)}
+            >
+              <Eye className="mr-2 h-4 w-4" />
+              Jetzt anfragen
+            </Button>
           </div>
         </div>
       </section>

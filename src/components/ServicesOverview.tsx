@@ -49,39 +49,42 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
   const services = [
     {
       icon: Sparkles,
-      title: "Motion-Integration & GSAP Showcases",
+      title: "Leads aus Webflow-Formularen automatisch ins CRM übertragen – ohne manuelle Arbeit oder Datenverlust.",
       description: "Professionelle Animationen und interaktive Erlebnisse für moderne Webprojekte.",
       features: [
-        "GSAP ScrollTrigger & Timeline Animationen",
-        "Webflow Custom Code Integration",
-        "Performance-optimierte Motion Design Umsetzung",
-        "Responsive Animation Behavior"
+        "Webflow-Formulare direkt an HubSpot, Pipedrive, Airtable oder Notion senden",
+        "Keine verlorenen Kontakte, volle Übersicht über Leads",
+        "Automatische Benachrichtigungen & Lead-Qualifizierung",
+        "Schnell implementierbare Workflows, ohne dass das Agentur-Team viel Zeit verliert"
       ],
-      priceRange: "ab 1.500 €"
+      priceRange: "1.500 - 3.000 €",
+      additionalPriceInfo: "Bei speziellen Anforderungen erstellen wir ein maßgeschneidertes Angebot auf Anfrage."
     },
     {
       icon: Network,
-      title: "Prozess- & Workflow-Integration",
+      title: "Technische Grenzen von Webflow überwinden",
       description: "Nahtlose Verbindung von APIs, Automationen und Webflow CMS.",
       features: [
-        "API-Integration (REST, GraphQL)",
-        "Webflow CMS & Datenbank-Anbindung",
-        "Workflow-Automationen (Make, Zapier, n8n)",
-        "Third-Party Tools & Services"
+        "Custom APIs und Middleware für komplexe Kundenwünsche",
+        "Mitgliederbereiche, dynamische Dashboards oder automatisierte Content-Updates",
+        "Schnittstellen zu Drittanbieter-Tools (z.B. Zahlungsprovider, externe Datenbanken)",
+        "Lösungen, die skalierbar sind und künftiges Wachstum ermöglichen"
       ],
-      priceRange: "ab 2.000 €"
+      priceRange: "ab 1.000 - 2.500 €",
+      additionalPriceInfo: "auf Anfrage - wenn mehrere Systeme integriert werden müssen oder Workflows sehr komplex sind."
     },
     {
       icon: MessageSquare,
-      title: "Technische Beratung & Showcases",
+      title: "Interne Abläufe automatisieren – mehr Zeit fürs Design",
       description: "Support für Pitches, Demos und technische Machbarkeitsanalysen.",
       features: [
-        "Technische Machbarkeitsprüfung",
-        "Interaktive Demo-Prototypen",
-        "Code-Dokumentation & Übergabe",
-        "Technischer Support & Optimierung"
+        "Projektstatus automatisch tracken und Deadlines im Blick behalten",
+        "Feedback- und Freigaberunden digital steuern, Scope Creep vermeiden",
+        "Dashboards für Projekte, Aufgaben und Assets zentralisieren",
+        "Effizientere Zusammenarbeit zwischen Design, Entwicklung und Kunde"
       ],
-      priceRange: "auf Anfrage"
+      priceRange: "auf Anfrage",
+        additionalPriceInfo: "auf Anfrage - bei komplexen Features, mehrere Integrationen oder maßgeschneiderte Logik nötig sind."
     }
   ];
 

@@ -13,14 +13,14 @@ export const Hero = ({ onContactClick }: HeroProps) => {
       
       <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
         <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6">
-          Technische Umsetzung für Agenturen
+            Mehr Leads, weniger Chaos für Webflow-Agenturen
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-light">
-          Animation, Integration, Automation
+          Effizienz, Integration, Automatisierung
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-          Professionelle technische Umsetzung Ihrer Webflow-Projekte mit GSAP-Animationen, 
-          API-Integrationen und skalierbaren Automationen – ohne Design-Leistungen.
+            Automatisierte CRM-Workflows, effiziente Projektprozesse und
+            technische Erweiterungen – alles, was Ihr Team wirklich entlastet.
         </p>
         
         <Button 
