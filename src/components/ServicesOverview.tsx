@@ -1,18 +1,20 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {Sparkles, Network, MessageSquare, Eye} from "lucide-react";
+import {Sparkles, Network, MessageSquare} from "lucide-react";
+import React from "react";
 
 interface ServiceProps {
   icon: React.ElementType;
   title: string;
   description: string;
+  description2?: string;
+  description3?: string;
   features: string[];
   priceRange?: string;
   additionalPriceInfo?: string;
   onContactClick: () => void;
 }
 
-const ServiceCard = ({ icon: Icon, title, description, features,
+const ServiceCard = ({ icon: Icon, title, description, description2, description3, features,
                          priceRange, additionalPriceInfo, onContactClick }: ServiceProps) => (
   <Card className="p-8 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col h-full">
 
@@ -25,12 +27,25 @@ const ServiceCard = ({ icon: Icon, title, description, features,
                   </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-foreground mb-3">
+              <h3 className={[
+                        'text-2xl',
+                         'font-semibold',
+                        'text-foreground',
+                         features.length === 0 ? 'mb-10' : 'mb-3'
+                        ].filter(Boolean).join(' ')}>
                   {title}
               </h3>
 
               <p className="text-muted-foreground mb-6 leading-relaxed">
                   {description}
+              </p>
+
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {description2}
+              </p>
+
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {description3}
               </p>
 
               {/* feature-list: kein mb, damit Footer nicht von variablen margins beeinflusst wird */}
@@ -70,43 +85,50 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
   const services = [
     {
       icon: Sparkles,
-      title: "Leads automatisch ins CRM übertragen",
-      description: "Professionelle Animationen und interaktive Erlebnisse für moderne Webprojekte.",
+      title: "CRM-INTEGRATION & LEAD-AUTOMATISIERUNG",
+      description: "Leads automatisch von Webflow ins CRM übertragen",
       features: [
         "Webflow-Formulare direkt an HubSpot, Pipedrive, Airtable oder Notion senden",
         "Keine verlorenen Kontakte, volle Übersicht über Leads",
         "Automatische Benachrichtigungen & Lead-Qualifizierung",
-        "Schnell implementierbare Workflows, ohne dass das Agentur-Team viel Zeit verliert"
       ],
-      priceRange: "1.500 - 3.000 €",
-      additionalPriceInfo: "Kleinere Setups (z. B. einfache Formular-zu-CRM-Verbindungen) sind oft als Fixpreis ab 1.000 € möglich."
+      priceRange: "1.500 - 2.500 €",
+      additionalPriceInfo: "Einfache Setups ab 1.000 €"
     },
     {
       icon: Network,
-      title: "Technische Grenzen von Webflow überwinden",
-      description: "Nahtlose Verbindung von APIs, Automationen und Webflow CMS.",
+      title: "CUSTOM INTEGRATIONEN & API-ENTWICKLUNG",
+      description: "Technische Grenzen von Webflow überwinden",
       features: [
-        "Custom APIs und Middleware für komplexe Kundenwünsche",
-        "Mitgliederbereiche, dynamische Dashboards oder automatisierte Content-Updates",
-        "Schnittstellen zu Drittanbieter-Tools (z.B. Zahlungsprovider, externe Datenbanken)",
-        "Lösungen, die skalierbar sind und künftiges Wachstum ermöglichen"
+        "Custom APIs und Middleware für komplexe Anforderungen",
+        "Mitgliederbereiche, Dashboards oder Content-Automatisierung",
+        "Anbindung von externen Drittanbieter-Tools (z.B. Paymentprovider, externe Datenbanken)"
       ],
-      priceRange: "ab 1.000 €, je nach Komplexität und Integrationsgrad",
-      additionalPriceInfo: "Ideal für Agenturen, die regelmäßig kundenspezifische Integrationen benötigen."
+      priceRange: "ab 2.500 €",
+      additionalPriceInfo: "Je nach Komplexität und Umfang"
     },
     {
       icon: MessageSquare,
-      title: "Interne Abläufe automatisieren – mehr Zeit fürs Design",
-      description: "Support für Pitches, Demos und technische Machbarkeitsanalysen.",
+      title: "PROZESSAUTOMATISIERUNG FÜR AGENTUREN",
+      description: "Interne Abläufe digitalisieren - mehr Zeit fürs Wesentliche",
       features: [
-        "Projektstatus automatisch tracken und Deadlines im Blick behalten",
-        "Feedback- und Freigaberunden digital steuern, Scope Creep vermeiden",
-        "Dashboards für Projekte, Aufgaben und Assets zentralisieren",
-        "Effizientere Zusammenarbeit zwischen Design, Entwicklung und Kunde"
+        "Projektstatus automatisch tracken und Deadlines überwachen",
+        "Feedback-Workflows und Freigaberunden digital steuern",
+        "Zentrale Dashboards für Projekte, Tasks und Assets"
       ],
-      priceRange: "ab 1.500 €, abhängig von der Prozesskomplexität und Tool-Integration.",
-      additionalPriceInfo: "Besonders hilfreich für Agenturen, die wiederkehrende Abläufe digitalisieren möchten."
-    }
+      priceRange: "ab 1.800 €",
+      additionalPriceInfo: "Abhängig von der Prozesskomplexität"
+    },
+      {
+          icon: MessageSquare,
+          title: "LAUFENDE BETREUUNG",
+          description: "Monatlicher Support-Retainer: ab 1.100 € / Monat (10 h)",
+          description2: "Stundensatz für Ad-hoc-Anfragen: 110 € / Stunde",
+          description3: "Größere Wartungsverträge: Individuelle Vereinbarung",
+          features: [],
+          priceRange: "ab 500 € / Monat",
+          additionalPriceInfo: "Ideal für Agenturen mit wiederkehrenden technischen Anforderungen",
+      }
   ];
 
   return (
