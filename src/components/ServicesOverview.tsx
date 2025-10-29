@@ -19,8 +19,10 @@ const ServiceCard = ({ icon: Icon, title, description, features,
       <div className="h-full flex flex-col p-8 shadow-card hover:shadow-soft transition-all duration-300">
           {/* --- Oberer Bereich, dehnt sich --- */}
           <div className="flex-1">
-              <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg self-start">
-                  <Icon className="h-8 w-8 text-accent" />
+              <div className="flex justify-center">
+                  <div className="flex mb-6 p-3 bg-accent/10 rounded-lg items-center justify-center">
+                      <Icon className="h-8 w-8 text-accent" />
+                  </div>
               </div>
 
               <h3 className="text-2xl font-semibold text-foreground mb-3">

@@ -12,7 +12,7 @@ export const ContactSection = ({ id = "contact" }: ContactSectionProps) => {
 
 
   return (
-    <section id={id} className="py-24 px-6 bg-gradient-subtle">
+    <section id={id} className="py-24 px-6 bg-background">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8 inline-flex p-4 bg-accent/10 rounded-full">
           <Mail className="h-12 w-12 text-accent" />
