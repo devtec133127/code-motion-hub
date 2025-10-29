@@ -8,36 +8,55 @@ interface ServiceProps {
   description: string;
   features: string[];
   priceRange?: string;
+  additionalPriceInfo?: string;
   onContactClick: () => void;
 }
 
-const ServiceCard = ({ icon: Icon, title, description, features, priceRange, onContactClick }: ServiceProps) => (
+const ServiceCard = ({ icon: Icon, title, description, features,
+                         priceRange, additionalPriceInfo, onContactClick }: ServiceProps) => (
   <Card className="p-8 shadow-card hover:shadow-soft transition-all duration-300 flex flex-col h-full">
-    <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg self-start">
-      <Icon className="h-8 w-8 text-accent" />
-    </div>
-    <h3 className="text-2xl font-semibold text-foreground mb-3">
-      {title}
-    </h3>
-    <p className="text-muted-foreground mb-6 leading-relaxed">
-      {description}
-    </p>
-    <ul className="space-y-2 mb-6 flex-1">
-      {features.map((feature, index) => (
-        <li key={index} className="text-sm text-muted-foreground flex items-start">
-          <span className="text-accent mr-2 mt-0.5">→</span>
-          {feature}
-        </li>
-      ))}
-    </ul>
-    {priceRange && (
-      <p className="text-lg font-semibold text-foreground mb-4">
-        {priceRange}
-      </p>
-    )}
-    <Button onClick={onContactClick} variant="outline" className="w-full">
-      Anfragen
-    </Button>
+
+      <div className="h-full flex flex-col p-8 shadow-card hover:shadow-soft transition-all duration-300">
+          {/* --- Oberer Bereich, dehnt sich --- */}
+          <div className="flex-1">
+              <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg self-start">
+                  <Icon className="h-8 w-8 text-accent" />
+              </div>
+
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                  {title}
+              </h3>
+
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {description}
+              </p>
+
+              {/* feature-list: kein mb, damit Footer nicht von variablen margins beeinflusst wird */}
+              <ul className="space-y-2">
+                  {features.map((feature, i) => (
+                      <li key={i} className="text-sm text-muted-foreground flex items-start">
+                          <span className="text-accent mr-2 mt-0.5">→</span>
+                          {feature}
+                      </li>
+                  ))}
+              </ul>
+          </div>
+
+          {/* --- Footer: sitzt dank flex-1 oben immer gleich tief --- */}
+          <div className="mt-6">
+              {priceRange && (
+                  <p className="text-lg font-semibold text-foreground mb-2">
+                      {priceRange}
+                  </p>
+              )}
+
+              {additionalPriceInfo && (
+                  <i className="text-sm text-muted-foreground leading-relaxed block">
+                      {additionalPriceInfo}
+                  </i>
+              )}
+          </div>
+      </div>
   </Card>
 );
 
@@ -49,7 +68,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
   const services = [
     {
       icon: Sparkles,
-      title: "Leads aus Webflow-Formularen automatisch ins CRM übertragen – ohne manuelle Arbeit oder Datenverlust.",
+      title: "Leads automatisch ins CRM übertragen",
       description: "Professionelle Animationen und interaktive Erlebnisse für moderne Webprojekte.",
       features: [
         "Webflow-Formulare direkt an HubSpot, Pipedrive, Airtable oder Notion senden",
@@ -58,7 +77,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Schnell implementierbare Workflows, ohne dass das Agentur-Team viel Zeit verliert"
       ],
       priceRange: "1.500 - 3.000 €",
-      additionalPriceInfo: "Bei speziellen Anforderungen erstellen wir ein maßgeschneidertes Angebot auf Anfrage."
+      additionalPriceInfo: "Kleinere Setups (z. B. einfache Formular-zu-CRM-Verbindungen) sind oft als Fixpreis ab 1.000 € möglich."
     },
     {
       icon: Network,
@@ -70,8 +89,8 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Schnittstellen zu Drittanbieter-Tools (z.B. Zahlungsprovider, externe Datenbanken)",
         "Lösungen, die skalierbar sind und künftiges Wachstum ermöglichen"
       ],
-      priceRange: "ab 1.000 - 2.500 €",
-      additionalPriceInfo: "auf Anfrage - wenn mehrere Systeme integriert werden müssen oder Workflows sehr komplex sind."
+      priceRange: "ab 1.000 €, je nach Komplexität und Integrationsgrad",
+      additionalPriceInfo: "Ideal für Agenturen, die regelmäßig kundenspezifische Integrationen benötigen."
     },
     {
       icon: MessageSquare,
@@ -83,8 +102,8 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Dashboards für Projekte, Aufgaben und Assets zentralisieren",
         "Effizientere Zusammenarbeit zwischen Design, Entwicklung und Kunde"
       ],
-      priceRange: "auf Anfrage",
-        additionalPriceInfo: "auf Anfrage - bei komplexen Features, mehrere Integrationen oder maßgeschneiderte Logik nötig sind."
+      priceRange: "ab 1.500 €, abhängig von der Prozesskomplexität und Tool-Integration.",
+      additionalPriceInfo: "Besonders hilfreich für Agenturen, die wiederkehrende Abläufe digitalisieren möchten."
     }
   ];
 
@@ -111,6 +130,9 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
             </div>
           ))}
         </div>
+          <Button onClick={onContactClick} variant="outline" className="w-full mt-4">
+              Jetzt anfragen
+          </Button>
       </div>
     </section>
   );

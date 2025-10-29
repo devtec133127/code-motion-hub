@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Mail, ArrowRight } from "lucide-react";
+import {useState} from "react";
+import {ContactForm} from "@/components/ContactForm.tsx";
 
 interface ContactSectionProps {
   id?: string;
 }
 
 export const ContactSection = ({ id = "contact" }: ContactSectionProps) => {
-  const handleContact = () => {
-    window.location.href = "mailto:kontakt@prozess-integration.de?subject=Projektanfrage";
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   return (
     <section id={id} className="py-24 px-6 bg-gradient-subtle">
@@ -24,16 +25,14 @@ export const ContactSection = ({ id = "contact" }: ContactSectionProps) => {
           Egal ob GSAP-Integration, Webflow-Automation oder API-Anbindung – wir finden die passende Lösung.
         </p>
         <Button 
-          onClick={handleContact}
+          onClick={() => setIsModalOpen(true)}
           size="lg"
           className="btn-cta text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300"
         >
-          Jetzt Projekt anfragen
+            Kostenlose Beratung
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
-        <p className="text-sm text-muted-foreground mt-6">
-          Antwort in der Regel innerhalb von 24 Stunden
-        </p>
+       <ContactForm open={isModalOpen} onOpenChange={setIsModalOpen} />
       </div>
     </section>
   );

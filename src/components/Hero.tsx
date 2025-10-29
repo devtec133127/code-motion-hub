@@ -28,7 +28,7 @@ export const Hero = ({ onContactClick }: HeroProps) => {
           size="lg"
           className="btn-cta text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300"
         >
-          Jetzt Projekt anfragen
+            Kostenlose Beratung
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </div>

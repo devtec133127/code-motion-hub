@@ -35,8 +35,8 @@ const showcaseItems: ShowcaseItem[] = [
   },
   {
     id: "interactive-hover",
-    title: "Interaktive Filter & Live-Daten",
-    description: "Besucher können Produkte nach Kategorie, Preis oder Verfügbarkeit filtern. Live-Counter zeigt aktuelle Lagerbestände.",
+    title: "Echtzeit-Daten & API-Anbindungen",
+    description: "Webflow-Inhalte werden automatisch mit externen Systemen synchronisiert – z. B. Lagerbestände, Produktinfos oder Verfügbarkeiten in Echtzeit.",
     demoUrl: "",
     codeSnippet: `const cards = gsap.utils.toArray('.card');
 cards.forEach(card => {
@@ -70,7 +70,7 @@ cards.forEach(card => {
   },
   {
     id: "automation",
-    title: "Kleine Prozessautomatisierungen",
+    title: "Personalisierte Inhalte durch Automatisierung",
     description: "Routine-Aufgaben wie Newsletter-Abonnenten, Event-Registrierungen oder Content-Publishing werden automatisiert.",
     demoUrl: "",
     codeSnippet: `gsap.timeline({
@@ -159,11 +159,11 @@ export const ShowcaseGallery = () => {
             <Button
               variant="outline"
               size="sm"
-              className="btn-demo flex-1"
+              className="btn-demo flex-1 mt-4"
               //onClick={() => handleDemoClick(item)}
             >
               <Eye className="mr-2 h-4 w-4" />
-              Jetzt anfragen
+                Kostenlose Beratung
             </Button>
           </div>
         </div>

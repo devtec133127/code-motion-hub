@@ -4,18 +4,18 @@ import { Card } from "@/components/ui/card";
 const benefits = [
   {
     icon: Zap,
-    title: "Performance & saubere Umsetzung",
-    description: "Optimierter Code für schnelle Ladezeiten und reibungslose Animationen auf allen Geräten."
+    title: "Zuverlässige Automatisierungen",
+    description: "Workflows laufen stabil, ohne manuelle Eingriffe oder doppelte Dateneingaben. So bleibt Ihr Team fokussiert auf Kreativität statt Routineaufgaben."
   },
   {
     icon: Workflow,
-    title: "Skalierbare Automationen",
-    description: "Integration von Prozessen und Workflows, die mit Ihrem Projekt wachsen."
+    title: "Nahtlose CRM-Integration",
+    description: "Leads aus Webflow, Typeform oder anderen Quellen werden automatisch ins CRM übertragen – sauber, sicher und nachvollziehbar."
   },
   {
     icon: Code2,
-    title: "Integration von Webflow & GSAP",
-    description: "Nahtlose Verbindung von Webflow-CMS, APIs und hochperformanten GSAP-Animationen."
+    title: "Erweiterbare technische Basis",
+    description: "Unsere Integrationen wachsen mit Ihren Anforderungen. Ob neue Tools, APIs oder Automatisierungen – das Fundament bleibt stabil."
   }
 ];
 
@@ -25,10 +25,11 @@ export const ValueProposition = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Warum technische Umsetzung?
+            Warum technische Umsetzung durch Spezialisten?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Konzentrieren Sie sich auf Strategie und Design – wir kümmern uns um die technische Perfektion.
+            Konzentrieren Sie sich auf Design und Kundenprojekte – ich sorge dafür,dass Ihre Prozesse,
+              Datenflüsse und Integrationen reibungslos funktionieren.
           </p>
         </div>
 
