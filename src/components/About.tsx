@@ -23,15 +23,25 @@ export const About: React.FC<AboutProps> = ({
             <div className="w-36 h-36 rounded-full bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center shadow-md">
               {/* Platzhalter-Avatar: ersetze ggf. durch <img src=... /> */}
               <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center text-xl font-semibold text-gray-600 text-center">
-                ICH
+                  <img
+                      src="/dein-bild.jpg"
+                      alt="Ich"
+                      className="w-32 h-32 rounded-full object-cover"
+                  />
               </div>
             </div>
 
             <h3 className="mt-6 text-xl font-semibold">xxx — Senior Software Engineer</h3>
             <p className="mt-2 text-sm text-muted-foreground max-w-xs text-center">
-              Ich bin Marcel Zinnow und arbeite seit über 18 Jahren als Software Engineer bei Softwareunternehmen. In der Vergangenheit konnte ich verschiedene Web- sowie komplexe Enterpriseanwendungen und
-              kleinere Unterstützungstools umsetzen und war zuletzt für die interne Prozessautomatisierung verantwortlich.
+                Ich bin Marcel Zinnow und habe 18 Jahre als Software Engineer
+                komplexe Webanwendungen und Enterprise-Systeme gebaut.
+                Beim Automatisieren interner Abläufe habe ich gemerkt, wie viel Wirkung kleine, gezielte Lösungen haben können.
             </p>
+              <p className="mt-2 text-sm text-muted-foreground max-w-xs text-center">
+                  Jetzt bringe ich diese Erfahrung direkt zu Webflow-Agenturen:
+                  Automatisierungen, Integrationen und technische Lösungen,
+                  die Ihr Team wirklich entlasten.
+              </p>
 
             <div className="mt-4 flex gap-3">
               {linkedin && (
@@ -58,7 +68,7 @@ export const About: React.FC<AboutProps> = ({
           </div>
 
           {/* Haupttext / Pitch */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col items-center justify-center w-full">
             <h2 className="text-2xl font-bold">Kurz & knapp — was ich für Agenturen tue</h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl">
               Ich helfe Agenturen, wiederkehrende technische Aufgaben auszulagern: von
@@ -76,7 +86,7 @@ export const About: React.FC<AboutProps> = ({
             </div>
 
             {/* Tech-Stack Chips */}
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex items-center justify-center flex-wrap gap-2">
               {["Airtable", "Webflow", "Zapier/Make", "Google Workspace / Sheets / Docs", "Trello / Jira", "Mailchimp", "Newsletter-Tools - E-Mail-Kampagnen", "Notion" ].map(
                 (t) => (
                   <span
