@@ -22,7 +22,7 @@ export const ContactSection = ({ id = "contact" }: ContactSectionProps) => {
         </h2>
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           Lassen Sie uns über Ihre technischen Anforderungen sprechen. 
-          Egal ob GSAP-Integration, Webflow-Automation oder API-Anbindung – wir finden die passende Lösung.
+          Ich find eine passende Lösung für Sie.
         </p>
         <Button 
           onClick={() => setIsModalOpen(true)}

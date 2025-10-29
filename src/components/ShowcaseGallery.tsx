@@ -104,7 +104,7 @@ cards.forEach(card => {
   {
     id: "personalizing",
     title: "Dynamische Inhalte & Personalisierung",
-    description: "Inhalte auf Ihrer Website passen sich automatisch an Besuchergruppen, tandort oder Verhalten an.",
+    description: "Inhalte auf Ihrer Website passen sich automatisch an Besuchergruppen, Standort oder Verhalten an.",
     demoUrl: "",
     codeSnippet: `gsap.timeline({
   scrollTrigger: {

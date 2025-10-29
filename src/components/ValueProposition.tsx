@@ -15,7 +15,7 @@ const benefits = [
   {
     icon: Code2,
     title: "Erweiterbare technische Basis",
-    description: "Unsere Integrationen wachsen mit Ihren Anforderungen. Ob neue Tools, APIs oder Automatisierungen – das Fundament bleibt stabil."
+    description: "Meine Integrationen wachsen mit Ihren Anforderungen. Ob neue Tools, APIs oder Automatisierungen – das Fundament bleibt stabil."
   }
 ];
 
@@ -28,7 +28,7 @@ export const ValueProposition = () => {
             Warum technische Umsetzung durch Spezialisten?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Konzentrieren Sie sich auf Design und Kundenprojekte – ich sorge dafür,dass Ihre Prozesse,
+            Konzentrieren Sie sich auf Design und Kundenprojekte – ich sorge dafür, dass Ihre Prozesse,
               Datenflüsse und Integrationen reibungslos funktionieren.
           </p>
         </div>
