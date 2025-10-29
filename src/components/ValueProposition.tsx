@@ -37,16 +37,16 @@ export const ValueProposition = () => {
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
-              className="p-8 shadow-card hover:shadow-soft transition-all duration-300 border border-border animate-fade-in"
+              className="p-8 shadow-card hover:shadow-soft transition-all duration-300 border border-border animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg">
+                <div className="mb-8 w-16 h-16 flex items-center justify-center bg-accent/10 rounded-lg mx-auto">
                 <benefit.icon className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-semibold text-foreground mb-3 text-left">
                 {benefit.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-left">
                 {benefit.description}
               </p>
             </Card>

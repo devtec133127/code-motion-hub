@@ -65,7 +65,7 @@ export const ContactForm = ({ open, onOpenChange }: FormModalProps) => {
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="max-w-md">
+            <DialogContent className="max-w-2xl">
                 <DialogHeader>
                     <DialogTitle>Erstgespräch anfragen</DialogTitle>
                 </DialogHeader>

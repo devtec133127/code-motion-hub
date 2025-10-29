@@ -1,7 +1,17 @@
-import { useState } from "react";
+import {ReactElement, ReactNode, useState} from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Eye, Code } from "lucide-react";
+import {
+    Eye,
+    Code,
+    ShoppingCartIcon,
+    Zap,
+    Workflow,
+    LayersIcon,
+    ClockArrowDownIcon,
+    LightbulbIcon,
+    LucideFormInput, UserIcon, LucideIcon
+} from "lucide-react";
 import { DemoModal } from "./DemoModal";
 import { CodeModal } from "./CodeModal";
 
@@ -12,6 +22,7 @@ interface ShowcaseItem {
   demoUrl: string;
   codeSnippet: string;
   imageSrc: string;
+  icon: LucideIcon;
 }
 
 const showcaseItems: ShowcaseItem[] = [
@@ -31,7 +42,8 @@ const showcaseItems: ShowcaseItem[] = [
   duration: 1.2,
   ease: "power3.out"
 });`,
-    imageSrc: "/placeholder.svg"
+    imageSrc: "/placeholder.svg",
+      icon: ShoppingCartIcon
   },
   {
     id: "interactive-hover",
@@ -48,7 +60,8 @@ cards.forEach(card => {
     paused: true
   });
 });`,
-    imageSrc: "/placeholder.svg"
+    imageSrc: "/placeholder.svg",
+      icon: ClockArrowDownIcon
   },
   {
     id: "scroll-story",
@@ -66,7 +79,8 @@ cards.forEach(card => {
 })
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
-    imageSrc: "/placeholder.svg"
+    imageSrc: "/placeholder.svg",
+      icon: LightbulbIcon
   },
   {
     id: "automation",
@@ -84,7 +98,8 @@ cards.forEach(card => {
 })
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
-    imageSrc: "/placeholder.svg"
+    imageSrc: "/placeholder.svg",
+      icon: LucideFormInput
   },
   {
     id: "personalizing",
@@ -102,11 +117,16 @@ cards.forEach(card => {
 })
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
-    imageSrc: "/placeholder.svg"
+    imageSrc: "/placeholder.svg",
+      icon: UserIcon
   }
 ];
 
-export const ShowcaseGallery = () => {
+interface ShowcaseGalleryProps {
+    onContactClick: () => void;
+}
+
+export const ShowcaseGallery = ({ onContactClick }: ShowcaseGalleryProps) => {
   const [demoModalOpen, setDemoModalOpen] = useState(false);
   const [codeModalOpen, setCodeModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<ShowcaseItem | null>(null);
@@ -142,7 +162,9 @@ export const ShowcaseGallery = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="aspect-video bg-secondary/50 flex items-center justify-center">
-                  <Code className="h-16 w-16 text-muted-foreground/30" />
+                    <div className="h-16 w-16 text-muted-foreground/30" >
+                        <item.icon size={64} />
+                    </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -155,12 +177,11 @@ export const ShowcaseGallery = () => {
               </Card>
             ))}
           </div>
-          <div className="flex gap-3">
+            <div className="btn-cta text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300 flex justify-center">
             <Button
-              variant="outline"
-              size="sm"
-              className="btn-demo flex-1 mt-4"
-              //onClick={() => handleDemoClick(item)}
+              size="lg"
+              className="btn-demo mt-4 flex-none"
+              onClick={onContactClick}
             >
               <Eye className="mr-2 h-4 w-4" />
                 Kostenlose Beratung

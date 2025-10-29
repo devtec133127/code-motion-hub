@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Network, MessageSquare } from "lucide-react";
+import {Sparkles, Network, MessageSquare, Eye} from "lucide-react";
 
 interface ServiceProps {
   icon: React.ElementType;
@@ -130,9 +130,6 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
             </div>
           ))}
         </div>
-          <Button onClick={onContactClick} variant="outline" className="w-full mt-4">
-              Jetzt anfragen
-          </Button>
       </div>
     </section>
   );

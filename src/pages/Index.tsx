@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero onContactClick={scrollToContact} />
       <ValueProposition />
-      <ShowcaseGallery />
+      <ShowcaseGallery onContactClick={scrollToContact} />
       <ServicesOverview onContactClick={scrollToContact} />
       <ContactSection />
       <Footer />
