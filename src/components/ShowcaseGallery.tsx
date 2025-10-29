@@ -161,7 +161,7 @@ export const ShowcaseGallery = ({ onContactClick }: ShowcaseGalleryProps) => {
                 className="showcase-card overflow-hidden shadow-card hover:shadow-soft transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="aspect-video bg-secondary/50 flex items-center justify-center">
+                <div className="w-full h-24 bg-secondary/50 flex items-center justify-center">
                     <div className="h-16 w-16 text-muted-foreground/30" >
                         <item.icon size={64} />
                     </div>
