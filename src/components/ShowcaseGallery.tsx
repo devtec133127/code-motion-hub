@@ -166,11 +166,11 @@ export const ShowcaseGallery = ({ onContactClick }: ShowcaseGalleryProps) => {
                         <item.icon size={64} />
                     </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                <div className="p-6 bg-white rounded-lg shadow-md max-w-full min-w-0">
+                  <h3 className="text-lg md:text-xl font-semibold text-foreground mb-2 break-words break-all md:break-normal">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+                  <p className="text-muted-foreground mb-6 text-sm leading-relaxed break-words">
                     {item.description}
                   </p>
                 </div>

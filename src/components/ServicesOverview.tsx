@@ -28,7 +28,8 @@ const ServiceCard = ({ icon: Icon, title, description, description2, description
               </div>
 
               <h3 className={[
-                        'text-2xl',
+                        'text-lg',
+                        'md:text-xl',
                          'font-semibold',
                         'text-foreground',
                          features.length === 0 ? 'mb-10' : 'mb-3'
@@ -109,7 +110,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
     },
     {
       icon: MessageSquare,
-      title: "PROZESSAUTOMATISIERUNG FÜR AGENTUREN",
+      title: "AUTOMATISIERUNG FÜR AGENTUREN",
       description: "Interne Abläufe digitalisieren - mehr Zeit fürs Wesentliche",
       features: [
         "Projektstatus automatisch tracken und Deadlines überwachen",

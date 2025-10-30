@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -b gh-pages",
-    "start-local": "npx serve dist"
+    "start-local": "npx serve dist",
+    "deploy:clean": "rm -rf dist && npm run build && echo 'digital.prozess-integration.de' > dist/CNAME && npx gh-pages -d dist -b gh-pages -t"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
