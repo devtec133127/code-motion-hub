@@ -16,7 +16,7 @@ export const Hero = ({ onContactClick }: HeroProps) => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(188,230,243,0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(188,230,243,0.1),transparent_50%)]" />
 
-      <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in mb-24">
+      <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in mb-24 mt-24">
         <h1 className="hero-title text-3xl sm:text-4xl md:text-6xl leading-snug font-bold tracking-tight text-foreground mt-24">
             Mehr Leads, weniger Chaos für Webflow-Agenturen
         </h1>
