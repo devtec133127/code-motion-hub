@@ -63,7 +63,7 @@ const ServiceCard = ({ icon: Icon, title, description, description2, description
           {/* --- Footer: sitzt dank flex-1 oben immer gleich tief --- */}
           <div className="mt-6">
               {priceRange && (
-                  <p className="text-lg font-semibold text-foreground mb-2">
+                  <p className="text-lg font-semibold text-foreground mb-2" style={{ whiteSpace: "pre-line" }}>
                       {priceRange}
                   </p>
               )}
@@ -93,8 +93,8 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Keine verlorenen Kontakte, volle Übersicht über Leads",
         "Automatische Benachrichtigungen & Lead-Qualifizierung",
       ],
-      priceRange: "1.500 - 2.500 €",
-      additionalPriceInfo: "Einfache Setups ab 1.000 €"
+      priceRange: "1.000 - 1.800 € \nLaunch-Preis: 850 - 1.530 €",
+      additionalPriceInfo: "Einfache Setups ab 700 €"
     },
     {
       icon: Network,
@@ -105,7 +105,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Mitgliederbereiche, Dashboards oder Content-Automatisierung",
         "Anbindung von externen Drittanbieter-Tools (z.B. Paymentprovider, externe Datenbanken)"
       ],
-      priceRange: "ab 2.500 €",
+      priceRange: "ab 2.000 € \nLaunch-Preis: ab 1.700 €",
       additionalPriceInfo: "Je nach Komplexität und Umfang"
     },
     {
@@ -117,17 +117,17 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
         "Feedback-Workflows und Freigaberunden digital steuern",
         "Zentrale Dashboards für Projekte, Tasks und Assets"
       ],
-      priceRange: "ab 1.800 €",
+      priceRange: "ab 1.500 € \nLaunch-Preis: ab 1.275 €",
       additionalPriceInfo: "Abhängig von der Prozesskomplexität"
     },
       {
           icon: MessageSquare,
           title: "LAUFENDE BETREUUNG",
-          description: "Monatlicher Support-Retainer: ab 1.100 € / Monat (10 h)",
-          description2: "Stundensatz für Ad-hoc-Anfragen: 110 € / Stunde",
+          description: "Monatlicher Support-Retainer: ab 900 € / Monat (10 h) (Launch-Preis: ab 765 € / Monat)",
+          description2: "Stundensatz für Ad-hoc-Anfragen: 90 € / Stunde (Launch-Preis: 77 € / Stunde)",
           description3: "Größere Wartungsverträge: Individuelle Vereinbarung",
           features: [],
-          priceRange: "ab 500 € / Monat",
+          priceRange: "ab 450 € / Monat \nLaunch-Preis: ab 383 € / Monat",
           additionalPriceInfo: "Ideal für Agenturen mit wiederkehrenden technischen Anforderungen",
       }
   ];

@@ -23,6 +23,7 @@ interface ShowcaseItem {
   codeSnippet: string;
   imageSrc: string;
   icon: LucideIcon;
+  advantage: string;
 }
 
 const showcaseItems: ShowcaseItem[] = [
@@ -43,7 +44,8 @@ const showcaseItems: ShowcaseItem[] = [
   ease: "power3.out"
 });`,
     imageSrc: "/placeholder.svg",
-      icon: ShoppingCartIcon
+      icon: ShoppingCartIcon,
+      advantage: "Spart ca. 4-5 Stunden/Woche für manuelle Updates"
   },
   {
     id: "interactive-hover",
@@ -61,7 +63,8 @@ cards.forEach(card => {
   });
 });`,
     imageSrc: "/placeholder.svg",
-      icon: ClockArrowDownIcon
+      icon: ClockArrowDownIcon,
+      advantage: "Spart ca. 4-5 Stunden/Woche für manuelle Updates"
   },
   {
     id: "scroll-story",
@@ -80,7 +83,8 @@ cards.forEach(card => {
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
-      icon: LightbulbIcon
+      icon: LightbulbIcon,
+      advantage: "Spart ca. 3-5 Stunden/Woche + reduziert Fehlerquote um 95%"
   },
   {
     id: "automation",
@@ -99,7 +103,8 @@ cards.forEach(card => {
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
-      icon: LucideFormInput
+      icon: LucideFormInput,
+      advantage: "Spart ca. 5-7 Stunden/Woche für administrative Aufgaben"
   },
   {
     id: "personalizing",
@@ -118,7 +123,8 @@ cards.forEach(card => {
 .from(".story-text", { opacity: 0, x: -100 })
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
-      icon: UserIcon
+      icon: UserIcon,
+      advantage: "Steigert Conversion-Rate um durchschnittlich 15-25%"
   }
 ];
 
@@ -173,6 +179,9 @@ export const ShowcaseGallery = ({ onContactClick }: ShowcaseGalleryProps) => {
                   <p className="text-muted-foreground mb-6 text-sm leading-relaxed break-words">
                     {item.description}
                   </p>
+                    <p className="text-accent text-sm leading-relaxed break-words mt-2">
+                        {item.advantage}
+                    </p>
                 </div>
               </Card>
             ))}

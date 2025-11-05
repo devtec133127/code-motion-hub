@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.avatar-fixed {
+    width: 200px !important;
+    height: 200px !important;
+    max-width: none !important;
+    max-height: none !important;
+    flex: 0 0 auto !important;
+    display: block !important;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}

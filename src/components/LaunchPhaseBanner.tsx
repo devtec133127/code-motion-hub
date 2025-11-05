@@ -19,8 +19,7 @@ export const LaunchPhaseBanner = ({ onContactClick }: { onContactClick?: () => v
                     </h3>
 
                     <p className="mt-1 text-xs text-slate-600">
-                        Ich baue aktuell mein Portfolio mit ausgewählten Webflow-Agenturen auf.
-                        Frühstarter erhalten <strong>50 % Rabatt</strong> und <strong>kostenlosen Support</strong> in den ersten 30 Tagen.
+                        Pilotprojekt-Kunden erhalten <strong>15 % Rabatt</strong> und <strong>kostenlosen Support</strong> in den ersten 30 Tagen.
                     </p>
 
                     <p className="text-xs text-black-100 mb-2 mt-2">

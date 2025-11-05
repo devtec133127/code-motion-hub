@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 interface AboutProps {
@@ -20,20 +19,26 @@ export const About: React.FC<AboutProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Avatar / Kurzprofil */}
           <div className="flex flex-col items-center justify-center w-full">
-            <div className="w-36 h-36 rounded-full bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center shadow-md">
-              {/* Platzhalter-Avatar: ersetze ggf. durch <img src=... /> */}
-              <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center text-xl font-semibold text-gray-600 text-center">
-                  <img
-                      src="/dein-bild.jpg"
-                      alt="Ich"
-                      className="w-32 h-32 rounded-full object-cover"
-                  />
-              </div>
-            </div>
+              <div className="w-[260px] h-[260px] rounded-full bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center shadow-md">
+                  <div className="w-[260px] h-[260px] rounded-xl bg-gradient-to-br from-slate-100 to-slate-50 flex items-center justify-center shadow-md">
+                      <div className="w-[200px] h-[200px] rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+                          <img
+                              src="/Profil_transparent.png"
+                              alt="Marcel Zinnow - Software Engineer"
+                              className="avatar-fixed"
+                              width={150}
+                              height={150}
+                          />
+                      </div>
+                  </div>
 
-            <h3 className="mt-6 text-xl font-semibold">xxx — Senior Software Engineer</h3>
+              </div>
+
+
+
+              <h3 className="mt-6 text-xl font-semibold">Marcel Zinnow — Software Engineer</h3>
             <p className="mt-2 text-sm text-muted-foreground max-w-xs text-center">
-                Ich bin Marcel Zinnow und habe 18 Jahre als Software Engineer
+                Über 18 Jahre habe ich als Software Engineer viele
                 komplexe Webanwendungen und Enterprise-Systeme gebaut.
                 Beim Automatisieren interner Abläufe habe ich gemerkt, wie viel Wirkung kleine, gezielte Lösungen haben können.
             </p>
@@ -54,22 +59,12 @@ export const About: React.FC<AboutProps> = ({
                   LinkedIn
                 </a>
               )}
-              {github && (
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm text-slate-600 hover:underline"
-                >
-                  GitHub
-                </a>
-              )}
             </div>
           </div>
 
           {/* Haupttext / Pitch */}
           <div className="lg:col-span-2 flex flex-col items-center justify-center w-full">
-            <h2 className="text-2xl font-bold">Kurz & knapp — was ich für Agenturen tue</h2>
+            <h2 className="text-2xl font-bold">Skalierbare Agentur-Dienstleistungen</h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl">
               Ich helfe Agenturen, wiederkehrende technische Aufgaben auszulagern: von
               Webflow-Integrationen über datengetriebene Features bis zu kleinen
@@ -87,7 +82,7 @@ export const About: React.FC<AboutProps> = ({
 
             {/* Tech-Stack Chips */}
             <div className="mt-6 flex items-center justify-center flex-wrap gap-2">
-              {["Airtable", "Webflow", "Zapier/Make", "Google Workspace / Sheets / Docs", "Trello / Jira", "Mailchimp", "Newsletter-Tools - E-Mail-Kampagnen", "Notion" ].map(
+              {["Webflow", "Hubspot / Pipedrive", "Airtable", "Zapier/Make", "Google Workspace / Sheets / Docs" ].map(
                 (t) => (
                   <span
                     key={t}

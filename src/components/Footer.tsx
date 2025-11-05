@@ -20,7 +20,7 @@ export const Footer = () => {
 
                   {/* rechte Icons */}
                   <div className="flex gap-4">
-                      <a href="https://linkedin.com/in/marcelzinnnow" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors" aria-label="LinkedIn">
+                      <a href="https://www.linkedin.com/in/marcelzinnnow" target="_blank" rel="noopener noreferrer" className="p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors" aria-label="LinkedIn">
                           <Linkedin className="h-5 w-5" />
                       </a>
                       <a href="mailto:kontakt@prozess-integration.de" className="p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors" aria-label="E-Mail">
