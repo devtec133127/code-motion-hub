@@ -18,15 +18,14 @@ export const Hero = ({ onContactClick }: HeroProps) => {
 
       <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in mb-24 mt-24">
         <h1 className="hero-title text-3xl sm:text-4xl md:text-6xl leading-snug font-bold tracking-tight text-foreground mt-24 mb-6">
-            Mehr Leads, weniger Chaos für Webflow-Agenturen
+            Zuverlässige Integration & Maintenance für Webflow-Projekte
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
           Effizienz, Integration, Automatisierung
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            30% weniger Zeit für Admin-Aufgaben = mehr Zeit für profitable Kundenprojekte.
-            Automatisierte CRM-Workflows, effiziente Projektprozesse und
-            technische Erweiterungen – alles, was Ihr Team wirklich entlastet.
+            Automatisierte Workflows, Custom-Integrationen und laufende Betreuung –
+            damit Ihre Webflow-Site reibungslos läuft
         </p>
         
         <Button 

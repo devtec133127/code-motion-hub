@@ -16,7 +16,12 @@ const benefits = [
     icon: Code2,
     title: "Erweiterbare technische Basis",
     description: "Meine Integrationen wachsen mit Ihren Anforderungen. Ob neue Tools, APIs oder Automatisierungen – das Fundament bleibt stabil."
-  }
+  },
+    {
+        icon: Code2,
+        title: "Integration Maintenance & Laufende Betreuung",
+        description: "Ich übernehme Ihre bestehenden Webflow-Integrationen und sorge dafür, dass sie langfristig stabil laufen – Updates, Fehler, Anpassungen inklusive."
+    }
 ];
 
 export const ValueProposition = () => {
@@ -33,7 +38,7 @@ export const ValueProposition = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
@@ -47,7 +52,7 @@ export const ValueProposition = () => {
                 {benefit.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed text-left">
-                {benefit.description}
+                  {benefit.description}
               </p>
             </Card>
           ))}

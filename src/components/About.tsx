@@ -43,9 +43,8 @@ export const About: React.FC<AboutProps> = ({
                 Beim Automatisieren interner Abläufe habe ich gemerkt, wie viel Wirkung kleine, gezielte Lösungen haben können.
             </p>
               <p className="mt-2 text-sm text-muted-foreground max-w-xs text-center">
-                  Jetzt bringe ich diese Erfahrung direkt zu Webflow-Agenturen:
-                  Automatisierungen, Integrationen und technische Lösungen,
-                  die Ihr Team wirklich entlasten.
+                  Automatisierte Workflows, Custom-Integrationen und laufende Betreuung –
+                  damit Ihre Webflow-Site reibungslos läuft
               </p>
 
             <div className="mt-4 flex gap-3">
@@ -64,9 +63,9 @@ export const About: React.FC<AboutProps> = ({
 
           {/* Haupttext / Pitch */}
           <div className="lg:col-span-2 flex flex-col items-center justify-center w-full">
-            <h2 className="text-2xl font-bold">Skalierbare Agentur-Dienstleistungen</h2>
+            <h2 className="text-2xl font-bold">Technische Lösungen für Ihr Webflow-Projekt</h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl">
-              Ich helfe Agenturen, wiederkehrende technische Aufgaben auszulagern: von
+              Ich übernehme wiederkehrende technische Aufgaben und laufende Betreuung: von
               Webflow-Integrationen über datengetriebene Features bis zu kleinen
               Backend-Automatisierungen. Ziel: weniger manueller Aufwand, schnellere
               Launches und stabile Abläufe für Ihre Kunden.
