@@ -29,8 +29,8 @@ interface ShowcaseItem {
 const showcaseItems: ShowcaseItem[] = [
   {
     id: "hero-reveal",
-    title: "Automatisierte Produktkataloge",
-    description: "Neue Produkte werden automatisch auf Ihrer Website angezeigt. Kein manuelles Einpflegen, sofortige Aktualisierung",
+    title: "Legacy-System-Wartung & Updates",
+    description: "Ihr individuelles ERP oder Custom-CRM läuft seit Jahren stabil – aber Updates, Bugfixes oder Anpassungen bleiben liegen, weil das Know-how fehlt. Ich übernehme die Wartung.",
     demoUrl: "",
     codeSnippet: `gsap.from(".hero-element", {
   scrollTrigger: {
@@ -45,12 +45,12 @@ const showcaseItems: ShowcaseItem[] = [
 });`,
     imageSrc: "/placeholder.svg",
       icon: ShoppingCartIcon,
-      advantage: "Spart ca. 4-5 Stunden/Woche für manuelle Updates"
+      advantage: "Spart ca. 5-8 Stunden/Woche für IT-Notfall-Management + verhindert System-Ausfälle"
   },
   {
     id: "interactive-hover",
-    title: "Echtzeit-Daten & API-Anbindungen",
-    description: "Webflow-Inhalte werden automatisch mit externen Systemen synchronisiert – z. B. Lagerbestände, Produktinfos oder Verfügbarkeiten in Echtzeit.",
+    title: "API-Integration zwischen Alt & Neu",
+    description: "Sie wollen moderne Tools (z.B. Cloud-Services, neue Software) mit Ihren bestehenden Systemen verbinden. Ich baue die Bridge – egal ob REST, SOAP oder proprietäre Schnittstellen.",
     demoUrl: "",
     codeSnippet: `const cards = gsap.utils.toArray('.card');
 cards.forEach(card => {
@@ -64,12 +64,12 @@ cards.forEach(card => {
 });`,
     imageSrc: "/placeholder.svg",
       icon: ClockArrowDownIcon,
-      advantage: "Spart ca. 4-5 Stunden/Woche für manuelle Updates"
+      advantage: "Neue Tools nutzen, ohne alte Systeme ersetzen zu müssen"
   },
   {
     id: "scroll-story",
-    title: "Smarte Lead-Formulare",
-    description: "Kontakt- oder Buchungsformulare leiten Leads automatisch in CRM oder Tabellen weiter.",
+    title: "Datenbank-Synchronisation & Datenmigration",
+    description: "Daten zwischen verschiedenen Systemen synchronisieren, alte Datenbanken migrieren oder regelmäßige Datenabgleiche automatisieren.\n",
     demoUrl: "",
     codeSnippet: `gsap.timeline({
   scrollTrigger: {
@@ -84,12 +84,12 @@ cards.forEach(card => {
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
       icon: LightbulbIcon,
-      advantage: "Spart ca. 3-5 Stunden/Woche + reduziert Fehlerquote um 95%"
+      advantage: "Spart ca. 4-6 Stunden/Woche für manuelle Datenübertragung + reduziert Fehlerquote um 95%"
   },
   {
     id: "automation",
-    title: "Personalisierte Inhalte durch Automatisierung",
-    description: "Routine-Aufgaben wie Newsletter-Abonnenten, Event-Registrierungen oder Content-Publishing werden automatisiert.",
+    title: "CRM-Integration & Lead-Automatisierung",
+    description: "Leads aus verschiedenen Quellen (Website, Formulare, externe Systeme) werden automatisch in Ihr CRM übertragen – sauber strukturiert und nachvollziehbar.\n",
     demoUrl: "",
     codeSnippet: `gsap.timeline({
   scrollTrigger: {
@@ -104,12 +104,12 @@ cards.forEach(card => {
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
       icon: LucideFormInput,
-      advantage: "Spart ca. 5-7 Stunden/Woche für administrative Aufgaben"
+      advantage: "Spart ca. 3-5 Stunden/Woche + keine verlorenen Leads mehr"
   },
   {
     id: "personalizing",
-    title: "Dynamische Inhalte & Personalisierung",
-    description: "Inhalte auf Ihrer Website passen sich automatisch an Besuchergruppen, Standort oder Verhalten an.",
+    title: "Prozess-Automatisierung für Routine-Tasks",
+    description: "Wiederkehrende manuelle Aufgaben (Excel-Imports, Datenübertragungen, Report-Generierung) werden automatisiert.",
     demoUrl: "",
     codeSnippet: `gsap.timeline({
   scrollTrigger: {
@@ -124,7 +124,7 @@ cards.forEach(card => {
 .from(".story-image", { opacity: 0, scale: 0.8 });`,
     imageSrc: "/placeholder.svg",
       icon: UserIcon,
-      advantage: "Steigert Conversion-Rate um durchschnittlich 15-25%"
+      advantage: "Spart ca. 6-10 Stunden/Woche für administrative Aufgaben + Mitarbeiter können sich auf Kernaufgaben fokussieren"
   }
 ];
 
@@ -156,7 +156,7 @@ export const ShowcaseGallery = ({ onContactClick }: ShowcaseGalleryProps) => {
               Use-Cases: Wo meine Unterstützung Mehrwert schafft
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Praxisnahe Anwendungsfälle rund um Automatisierung, Webflow-Integrationen und datengetriebene Features
+                Praxisnahe Anwendungsfälle rund um Integration, Wartung und Automatisierung gewachsener IT-Landschaften
             </p>
           </div>
 

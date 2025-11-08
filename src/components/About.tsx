@@ -44,7 +44,7 @@ export const About: React.FC<AboutProps> = ({
             </p>
               <p className="mt-2 text-sm text-muted-foreground max-w-xs text-center">
                   Automatisierte Workflows, Custom-Integrationen und laufende Betreuung –
-                  damit Ihre Webflow-Site reibungslos läuft
+                  damit Ihr Unternehmen reibungslos läuft
               </p>
 
             <div className="mt-4 flex gap-3">
@@ -66,22 +66,21 @@ export const About: React.FC<AboutProps> = ({
             <h2 className="text-2xl font-bold">Technische Lösungen für Ihr Webflow-Projekt</h2>
             <p className="mt-4 text-base text-muted-foreground max-w-2xl">
               Ich übernehme wiederkehrende technische Aufgaben und laufende Betreuung: von
-              Webflow-Integrationen über datengetriebene Features bis zu kleinen
-              Backend-Automatisierungen. Ziel: weniger manueller Aufwand, schnellere
-              Launches und stabile Abläufe für Ihre Kunden.
+              CRM/ERP-Integrationen über Anbindung von Drittsystemen und Datenbanken bis zu Workflow Automatisierungen.
+                Ziel: weniger manueller Aufwand, stabile Abläufe und eine professionelle Betreuung für Ihr Unternehmen.
             </p>
 
             {/* Leistungen / Skills */}
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-              <SkillItem text="Automatisierte Produktkataloge (Airtable → Webflow)" />
-              <SkillItem text="Integration & APIs (REST, Webhooks, kleine Serverless-Tasks)" />
-              <SkillItem text="Datenlogik & Business-Rules (Rabatte, Validierungen)" />
-              <SkillItem text="Interaktive Frontends & Microinteractions (Webflow / JS)" />
+              <SkillItem text="Integration & Anbindung" />
+              <SkillItem text="Wartung & Support" />
+              <SkillItem text="Automatisierung" />
+              <SkillItem text="Beratung & Analyse" />
             </div>
 
             {/* Tech-Stack Chips */}
             <div className="mt-6 flex items-center justify-center flex-wrap gap-2">
-              {["Webflow", "Hubspot / Pipedrive", "Airtable", "Zapier/Make", "Google Workspace / Sheets / Docs" ].map(
+              {["Microsoft Dynamics | HubSpot | Pipedrive", "PostgreSQL | MariaDB | MSSQL"  ].map(
                 (t) => (
                   <span
                     key={t}

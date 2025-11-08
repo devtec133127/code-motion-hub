@@ -4,23 +4,23 @@ import { Card } from "@/components/ui/card";
 const benefits = [
   {
     icon: Zap,
-    title: "Zuverlässige Automatisierungen",
-    description: "Workflows laufen stabil, ohne manuelle Eingriffe oder doppelte Dateneingaben. So bleibt Ihr Team fokussiert auf Kreativität statt Routineaufgaben."
+    title: "Legacy-System-Wartung",
+    description: "Ihre individuellen ERPs, Custom-CRMs oder Legacy-Datenbanken laufen weiter – ich übernehme Updates, Bugfixes und sorge dafür, dass bestehende Integrationen stabil bleiben.\n"
   },
   {
     icon: Workflow,
-    title: "Nahtlose CRM-Integration",
-    description: "Leads aus Webflow, Typeform oder anderen Quellen werden automatisch ins CRM übertragen – sauber, sicher und nachvollziehbar."
+    title: "API-Integration (REST & SOAP)",
+    description: "Ich verbinde Ihre gewachsenen Systeme mit modernen Tools – ob Cloud-Dienste, neue Software oder externe Partner-Schnittstellen."
   },
   {
     icon: Code2,
-    title: "Erweiterbare technische Basis",
-    description: "Meine Integrationen wachsen mit Ihren Anforderungen. Ob neue Tools, APIs oder Automatisierungen – das Fundament bleibt stabil."
+    title: "Prozess-Automatisierung",
+    description: "Manuelle Datenübertragungen, Excel-Imports oder wiederkehrende Tasks automatisiere ich – Ihre Mitarbeiter sparen Zeit, Fehler werden reduziert."
   },
     {
         icon: Code2,
-        title: "Integration Maintenance & Laufende Betreuung",
-        description: "Ich übernehme Ihre bestehenden Webflow-Integrationen und sorge dafür, dass sie langfristig stabil laufen – Updates, Fehler, Anpassungen inklusive."
+        title: "Flexibler Support ohne Festanstellung",
+        description: "Sie zahlen nur für tatsächlich geleistete Arbeit. Kein Full-Time-Developer nötig – ich springe ein, wenn Sie mich brauchen."
     }
 ];
 
@@ -30,11 +30,10 @@ export const ValueProposition = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Warum technische Umsetzung durch Spezialisten?
+              Warum externe Wartung statt Festanstellung?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Konzentrieren Sie sich auf Design und Kundenprojekte – ich sorge dafür, dass Ihre Prozesse,
-              Datenflüsse und Integrationen reibungslos funktionieren.
+              Ihre gewachsenen Systeme laufen – aber Wartung, Updates und Integrationen bleiben liegen, weil kein internes Dev-Team verfügbar ist. Ich übernehme diese Lücke: Flexibel, nur wenn Sie mich brauchen, ohne langfristige Verpflichtung.
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import {ArrowRight, Check, Circle} from "lucide-react";
 import {LaunchPhaseBanner} from "@/components/LaunchPhaseBanner.tsx";
+import React from "react";
 
 interface HeroProps {
   onContactClick: () => void;
@@ -18,17 +19,27 @@ export const Hero = ({ onContactClick }: HeroProps) => {
 
       <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in mb-24 mt-24">
         <h1 className="hero-title text-3xl sm:text-4xl md:text-6xl leading-snug font-bold tracking-tight text-foreground mt-24 mb-6">
-            Zuverlässige Integration & Maintenance für Webflow-Projekte
+            Integration & Wartung für gewachsene IT-Landschaften
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
           Effizienz, Integration, Automatisierung
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            Automatisierte Workflows, Custom-Integrationen und laufende Betreuung –
-            damit Ihre Webflow-Site reibungslos läuft
+            Ich halte Ihre individuellen Systeme am Laufen und verbinde sie mit modernen Tools - ohne dass Sie einen Full-Time-Developer einstellen müssen.
         </p>
-        
-        <Button 
+
+      <h3 className="text-xl font-semibold text-foreground mb-2 mx-auto">
+          Spezialisiert auf:
+      </h3>
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+          <SkillItem text="Custom CRM / ERP - Integrationen" />
+          <SkillItem text="Anbindung von legacy Datenbanken" />
+          <SkillItem text="REST & SOAP APIs" />
+          <SkillItem text="Prozess-Automatisierung" />
+      </div>
+
+
+          <Button
           onClick={onContactClick}
           size="lg"
           className="btn-cta text-lg px-8 py-6 shadow-soft hover:shadow-lg transition-all duration-300"
@@ -40,3 +51,12 @@ export const Hero = ({ onContactClick }: HeroProps) => {
     </section>
   );
 };
+
+const SkillItem: React.FC<{ text: string }> = ({ text }) => (
+    <div className="flex items-start gap-3 bg-white border border-slate-100 rounded-lg p-3 shadow-sm">
+    <span className="flex-shrink-0 mt-0.5">
+      <Check className="h-4 w-4 text-green-600" />
+    </span>
+        <p className="text-sm text-slate-700">{text}</p>
+    </div>
+);

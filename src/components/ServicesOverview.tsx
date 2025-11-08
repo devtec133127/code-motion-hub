@@ -83,46 +83,102 @@ interface ServicesOverviewProps {
 }
 
 export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
-  const services = [
+    const services = [
+        {
+            icon: Sparkles,
+            title: "INTEGRATION & ANBINDUNG",
+            description: "Sie nutzen verschiedene Systeme, die miteinander kommunizieren müssen? Ich verbinde Ihre gewachsene IT-Landschaft mit modernen Tools – unabhängig von Technologie oder Altersunterschied der Systeme. Von Legacy-Datenbanken bis Cloud-Services.",
+            features: [
+                "Custom ERP-Integrationen",
+                "Legacy-Datenbank-Anbindungen",
+                "REST & SOAP API-Entwicklung",
+                "Cloud-Service-Integration",
+                "Third-Party-System-Verbindungen",
+            ]
+        },
+        {
+            icon: Network,
+            title: "WARTUNG & SUPPORT",
+            description: "Ihre Systeme laufen – aber wer kümmert sich um Updates, Fehler oder Performance-Probleme? Ich übernehme die laufende technische Betreuung, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+            features: [
+                "Laufende System-Wartung",
+                "Bug-Fixes & Updates",
+                "Performance-Optimierung",
+                "Monitoring & Fehler-Tracking",
+                "Emergency-Support"
+            ]
+        },
+        {
+            icon: MessageSquare,
+            title: "AUTOMATISIERUNG",
+            description: "Manuelle Datenübertragungen, Excel-Imports oder wiederkehrende Tasks kosten Zeit und sind fehleranfällig. Ich automatisiere diese Prozesse, damit Ihr Team effizienter arbeiten kann.",
+            features: [
+                "Prozess-Automatisierung",
+                "Daten-Synchronisation",
+                "Report-Generierung",
+                "Workflow-Optimierung",
+                "Manuelle Tasks eliminieren"
+            ]
+        },
+        {
+            icon: MessageSquare,
+            title: "BERATUNG & ANALYSE",
+            description: "Unsicher, ob eine Integration machbar ist oder was die beste Lösung wäre? Ich analysiere Ihre IT-Landschaft, bewerte technische Machbarkeit und entwickle pragmatische Konzepte – bevor Sie investieren.",
+            features: [
+                "IT-Landschaft-Analyse",
+                "Integrations-Konzepte",
+                "Technische Machbarkeit",
+                "Kosten-Nutzen-Bewertung",
+                "Langfristige Roadmap"
+            ]
+        }
+    ];
+  /*const services = [
     {
       icon: Sparkles,
-      title: "CRM-INTEGRATION & LEAD-AUTOMATISIERUNG",
-      description: "Leads automatisch von Webflow ins CRM übertragen",
+      title: "Integration & Anbindung",
+      description: "Ich verbinde Ihre Systeme um ",
       features: [
-        "Webflow-Formulare direkt an HubSpot, Pipedrive, Airtable oder Notion senden",
-        "Keine verlorenen Kontakte, volle Übersicht über Leads",
-        "Automatische Benachrichtigungen & Lead-Qualifizierung",
+        "Custom ERP-Integrationen",
+        "Legacy-Datenbank-Anbindungen",
+        "REST & SOAP API-Entwicklung",
+          "Cloud-Service-Integration",
+          "Third-Party-System-Verbindungen",
       ],
       priceRange: "1.000 - 1.800 € \nLaunch-Preis: 850 - 1.530 €",
       additionalPriceInfo: "Einfache Setups ab 700 €"
     },
     {
       icon: Network,
-      title: "CUSTOM INTEGRATIONEN & API-ENTWICKLUNG",
+      title: "Wartung & Support",
       description: "Technische Grenzen von Webflow überwinden",
       features: [
-        "Custom APIs und Middleware für komplexe Anforderungen",
-        "Mitgliederbereiche, Dashboards oder Content-Automatisierung",
-        "Anbindung von externen Drittanbieter-Tools (z.B. Paymentprovider, externe Datenbanken)"
+        "Laufende System-Wartung",
+        "Bug-Fixes & Updates",
+        "Performance-Optimierung",
+          "Monitoring & Fehler-Tracking",
+          "Emergency-Support"
       ],
       priceRange: "ab 2.000 € \nLaunch-Preis: ab 1.700 €",
       additionalPriceInfo: "Je nach Komplexität und Umfang"
     },
     {
       icon: MessageSquare,
-      title: "AUTOMATISIERUNG FÜR AGENTUREN",
+      title: "AUTOMATISIERUNG",
       description: "Interne Abläufe digitalisieren - mehr Zeit fürs Wesentliche",
       features: [
-        "Projektstatus automatisch tracken und Deadlines überwachen",
-        "Feedback-Workflows und Freigaberunden digital steuern",
-        "Zentrale Dashboards für Projekte, Tasks und Assets"
+        "Prozess-Automatisierung",
+        "Daten-Synchronisation",
+        "Report-Generierung",
+          "Workflow-Optimierung",
+          "Manuelle Tasks eliminieren"
       ],
       priceRange: "ab 1.500 € \nLaunch-Preis: ab 1.275 €",
       additionalPriceInfo: "Abhängig von der Prozesskomplexität"
     },
       {
           icon: MessageSquare,
-          title: "LAUFENDE BETREUUNG",
+          title: "BERATUNG & ANALYSE",
           description: "Monatlicher Support-Retainer: ab 900 € / Monat (10 h) (Launch-Preis: ab 765 € / Monat)",
           description2: "Stundensatz für Ad-hoc-Anfragen: 90 € / Stunde (Launch-Preis: 77 € / Stunde)",
           description3: "Größere Wartungsverträge: Individuelle Vereinbarung",
@@ -130,7 +186,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
           priceRange: "ab 450 € / Monat \nLaunch-Preis: ab 383 € / Monat",
           additionalPriceInfo: "Ideal für Agenturen mit wiederkehrenden technischen Anforderungen",
       }
-  ];
+  ];*/
 
   return (
     <section className="py-24 px-6 bg-background">
@@ -140,7 +196,7 @@ export const ServicesOverview = ({ onContactClick }: ServicesOverviewProps) => {
             Leistungsübersicht
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Maßgeschneiderte technische Lösungen für Ihre Agentur
+              Meine Leistungen im Überblick
           </p>
         </div>
 
