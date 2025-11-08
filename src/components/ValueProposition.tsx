@@ -30,10 +30,10 @@ export const ValueProposition = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Warum externe Wartung statt Festanstellung?
+              Warum ich als externe Unterstützung für Ihr Entwickler Team von Nutzen bin?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ihre gewachsenen Systeme laufen – aber Wartung, Updates und Integrationen bleiben liegen, weil kein internes Dev-Team verfügbar ist. Ich übernehme diese Lücke: Flexibel, nur wenn Sie mich brauchen, ohne langfristige Verpflichtung.
+              Ihre gewachsenen Systeme laufen – aber Wartung, Updates und Integrationen bleiben liegen, weil Ihr internes Dev-Team auf höher priorisierte Tätigkeiten angesetzt ist oder einfach zeitlich Entwicklungsunterstützung benötigt wird. Hier komme ich ins Spiel, ohne langfristige Verpflichtung, direkt Einsatzbereit.
           </p>
         </div>
 

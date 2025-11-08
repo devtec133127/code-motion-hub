@@ -25,7 +25,7 @@ export const Hero = ({ onContactClick }: HeroProps) => {
           Effizienz, Integration, Automatisierung
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            Ich halte Ihre individuellen Systeme am Laufen und verbinde sie mit modernen Tools - ohne dass Sie einen Full-Time-Developer einstellen müssen.
+            Ich unterstütze Ihre Dev-Teams bei komplexen Legacy-Systemen, die interne Ressourcen binden
         </p>
 
       <h3 className="text-xl font-semibold text-foreground mb-2 mx-auto">
