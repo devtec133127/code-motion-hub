@@ -30,14 +30,10 @@ export const ValueProposition = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Warum ich als externe Unterstützung für Ihr Entwickler Team von Nutzen bin?
+              Für IT-Leiter und CTOs
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ihre gewachsenen Systeme laufen – aber Wartung, Updates und Integrationen bleiben liegen,
-              weil Ihr internes Dev-Team auf höher priorisierte Tätigkeiten angesetzt ist,
-              Ihr Team aufgrund zeitlicher Vorgaben Entwicklungsunterstützung benötigt oder
-              Sie für Spezialthemen Expertise benötigen.
-              Hier komme ich ins Spiel, ohne langfristige Verpflichtung, direkt Einsatzbereit.
+              Wenn Ihr Entwicklerteam bei Legacy-Anbindungen Unterstützung braucht - ich springe projektbasiert oder als Retainer ein.
           </p>
         </div>
 
